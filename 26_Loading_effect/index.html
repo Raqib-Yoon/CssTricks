@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Effect...</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(9, 51, 84);
+        }
+
+        .loading {
+            width: 30rem;
+            height: 30rem;
+            border-radius: 50%;
+            border-right: .4rem solid white;
+            animation: borders 2s linear infinite;
+        }
+        @keyframes borders {
+            0% {
+                transform:rotate(0deg) ;
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        h1{
+            color: white;
+            position: absolute;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Loading...</h1>
+    <div class="loading">
+    </div>
+</body>
+
+</html>

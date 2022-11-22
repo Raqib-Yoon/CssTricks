@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(5, 45, 70); */
+    height: 100vh;
+}
+
+ul {
+    display: flex;
+    gap: 4rem;
+    position: relative;
+}
+
+li {
+    list-style: none;
+    position: relative;
+    transition: all .3s;
+}
+
+
+li a {
+    text-decoration: none;
+    background-color: none;
+    padding: 2rem 2rem;
+
+    font-size: 2rem;
+    color: black;
+    transition: all .3s;
+}
+
+ul li a::before {
+
+    content: '';
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    bottom: .3rem;
+    left: .3rem;
+    border-bottom: 2px solid rgb(255, 51, 0);
+    border-left: 2px solid  rgb(255, 51, 0);
+    opacity: 0;
+    transition: all .3s;
+}
+
+ul li a::after {
+
+    content: '';
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    top: .3rem;
+    right: .3rem;
+    opacity: 0;
+
+    border-top: 2px solid rgb(255, 51, 0);
+    border-right: 2px solid  rgb(255, 51, 0);
+
+    transition: all .3s;
+
+}
+
+ul li a:hover:before {
+
+    left: -.5rem;
+    bottom: -.5rem;
+    opacity: 1;
+
+
+}
+
+ul li a:hover:after {
+
+    top: -.5rem;
+    right: -.5rem;
+    opacity: 1;
+
+}
+
+
+
+ul li:hover
+{
+    background-color: rgb(138, 12, 81);
+    color: white;
+    
+}
+
+ul li a:hover
+{
+    color: white;
+}

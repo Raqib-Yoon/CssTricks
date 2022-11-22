@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#6592cf;
+}
+
+div{
+    width:40rem;
+    height:20rem;
+    background-color: #243d83;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+div::before{
+    content: '';
+    position: absolute;
+    background-color: red;
+    width:20rem;
+    height:20rem;
+    background-color: transparent;
+    border:5rem solid #6592cf;
+    border-radius: 50%;
+}
+
+div::after{
+    
+    content: '';
+    position: absolute;
+    background-color:#eeb850;
+    width:6rem;
+    height:6rem;
+    border-radius: 50%;
+}
+

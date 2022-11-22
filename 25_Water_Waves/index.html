@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Waves</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(12, 74, 104);
+        }
+
+        .parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .waves {
+            width: .5rem;
+            height: 10rem;
+            background-color: white;
+            border-radius: 15px;
+            animation: waves 1s linear infinite;
+        }
+
+        @keyframes waves {
+            0%{
+                transform: scale(0);
+            }
+            50%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(0);
+            }
+        }
+
+
+        .waves:nth-child(2){
+            animation-delay:.1s ;
+        }
+        .waves:nth-child(3){
+            animation-delay:.2s ;
+        }
+        .waves:nth-child(4){
+            animation-delay:.3s ;
+        }
+        .waves:nth-child(5){
+            animation-delay:.4s ;
+        }
+        .waves:nth-child(6){
+            animation-delay:.5s ;
+        }
+        .waves:nth-child(7){
+            animation-delay:.6s ;
+        }
+        .waves:nth-child(8){
+            animation-delay:.7s ;
+        }
+        .waves:nth-child(9){
+            animation-delay:.8s ;
+        }
+        .waves:nth-child(10){
+            animation-delay:.9s ;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="waves"></div>
+        <div class="waves"></div>
+        <div class="waves"></div>
+        <div class="waves"></div>
+        <div class="waves"></div>
+        <div class="waves"></div>
+        <div class="waves"></div>
+        <div class="waves"></div>
+        <div class="waves"></div>
+        <div class="waves"></div>
+    </div>
+</body>
+
+</html>

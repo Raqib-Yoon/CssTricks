@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.face{
+    width:48rem;
+    height:45rem;
+    border: 1rem solid black;
+    border-radius: 50%;
+    background-color: transparents;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position: relative;
+}
+
+
+.face::before{
+    content: '';
+    position: absolute;
+    width:100px;
+    height:100px;
+    border: 3rem solid black;
+    left: -18%;
+    top: -10%;
+    background-color: rgb(136, 135, 135);
+    border-radius: 50% 0 0 50%;
+
+    rotate: 40deg;
+
+}
+
+
+
+
+
+.face::after{
+    content: '';
+    position: absolute;
+    width:100px;
+    height:100px;
+    border: 3rem solid black;
+    right: -18%;
+    top: -10%;
+    background-color: rgb(136, 135, 135);
+
+    border-radius: 50% 50% 0 0 ;
+
+    rotate: 50deg;
+
+}
+
+
+.eye_container{
+    width:35rem;
+    height:20rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.left_eye{
+    width:10rem;
+    height:13rem;
+    background-color: black;
+    border-radius: 42%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.left_eye::before{
+    content: '';
+    position: absolute;
+    width:4rem;
+    height:6rem;
+    border: 1rem solid white;    
+    border-radius: 50%;
+}
+
+.left_eye::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 1.5rem;
+    height:1.5rem;
+    border-radius: 50%;
+}
+
+
+
+
+.right_eye{
+    width:10rem;
+    height:13rem;
+    background-color: black;
+    border-radius: 42%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+
+.right_eye::before{
+    content: '';
+    position: absolute;
+    width:4rem;
+    height:6rem;
+    border: 1rem solid white;    
+    border-radius: 50%;
+}
+
+.right_eye::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 1.5rem;
+    height:1.5rem;
+    border-radius: 50%;
+}
+
+
+.eye_container::before{
+    content: '';
+    position: absolute;
+    width:100px;
+    height:100px;
+    background-color: black;
+
+    left: 50%;
+    top: 60%;
+
+    transform: translateX(-50%);
+
+    border-radius: 0 0 50% 50% ;
+}

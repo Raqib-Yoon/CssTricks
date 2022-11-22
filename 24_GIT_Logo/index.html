@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT Logo</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* background-color: rgb(6, 61, 88); */
+        }
+
+        .container {
+            width: 20rem;
+            height: 20rem;
+            background-color: #fe4621;
+            border-radius: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            transform: rotate(-45deg);
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            width: 2rem;
+            height: 8rem;
+            background-color: white;
+            top: 0;
+            right: 25%;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 5rem;
+            height: 5rem;
+            background-color: white;
+            top: 4rem;
+            right: 17%;
+            border-radius: 50%;
+        }
+
+        .first {
+            width: 2rem;
+            height: 6rem;
+            position: absolute;
+            top: 8rem;
+            right: 25%;
+            background-color: white;
+        }
+        .first::before{
+            content: '';
+            position: absolute;
+            width:5rem;
+            height:5rem;
+            background-color: white;
+            border-radius: 50%;
+            top: 70%;
+            right: -85%;
+        }
+
+        .second{
+            width:2rem;
+            height:10rem;
+            background-color: green;
+            position: absolute;
+            right:45%;
+            transform: rotate(45deg);
+            background-color: white;
+        }
+        .second::before{
+            content: '';
+            position: absolute;
+            width:5rem;
+            height:5rem;
+            background-color: white;
+            border-radius: 50%;
+            top: 8rem;
+            right: -100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="first"></div>
+        <div class="second"></div>
+    </div>
+</body>
+
+</html>

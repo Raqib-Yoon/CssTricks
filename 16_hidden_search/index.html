@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(7, 30, 59);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 3rem;
+            height: 3rem;
+            background-color: whitesmoke;
+            border-radius: 30px;
+            transition: all .2s;
+        }
+
+        .search:hover {
+            width: 15rem;
+            padding: 1rem;
+
+        }
+
+        .search:hover input {
+            width: 80%;
+
+        }
+
+        input {
+            transition: all .2s;
+            width: 0;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            font-size: .9rem;
+            color: black;
+        }
+
+        span {
+            font-size: 1.4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search">
+        <input type="text" name="" id="" placeholder="Type to Search" autofocus="true"><span>🔍</span>
+    </div>
+</body>
+
+</html>

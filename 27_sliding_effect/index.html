@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding effect</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            border: 1px solid red;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            background-color: rgb(4, 58, 83);
+        }
+
+
+        .center_div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: white;
+            font-size: 4rem;
+            letter-spacing: 2px;
+            position: relative;
+            width: 30rem;
+        }
+
+        h1::before {
+            content: '♥Raqib Yoon♥';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            color: #2ed573;
+            border-right: 2px solid #2ed573;
+            animation: slid 3s linear infinite;
+            word-wrap: none;
+            
+            overflow: hidden;
+        }
+
+        @keyframes slid {
+            0% {
+                width: 0%;
+            }
+
+            50% {
+                width: 100%;
+            }
+
+            100% {
+                width: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center_div">
+
+        <h1>♥Raqib Yoon♥</h1>
+    </div>
+</body>
+
+</html>

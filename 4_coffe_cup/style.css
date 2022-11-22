@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #13d097;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.coffee {
+    width: 150px;
+    height: 150px;
+    background-color: #3f2616;
+    border-radius: 50%;
+
+    position: relative;
+
+    box-shadow: 0 0 0 10px #523320,
+        0 0 0 20px #3f2616,
+        0 0 0 30px #feaa3a,
+        0 0 0 50px #dc9613,
+        90px 60px 0 -20px #523320,
+        -40px 100px 0 -20px #523320,
+        40px 140px 0 -5px #523320,
+        -60px 200px 0 -45px #523320,
+        -20px 250px 0 -60px #523320
+}
+
+.coffee::before{
+
+    position: absolute;
+    top: -50px;
+    left: 180px;
+
+    content: '';
+    width: 60px;
+    height: 80px;
+    background-color: #d48e0a;
+    z-index: 100;
+
+    transform: rotate(56deg);
+
+}

@@ -1,0 +1,70 @@
+*{padding: 0; margin: 0; box-sizing: border-box; }
+
+html{ font-size:62.5%; }
+
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+}
+
+:root{
+    --camera-bg:#d2dae2;
+    --shdow-color:#222a2f;
+    --power-btn:#0be881;
+    --camera-lens:#218c74;
+}
+
+.camera{
+    width:40rem;
+    height:30rem;
+    background-color:var(--camera-bg);
+    box-shadow: 0 1rem 1.2rem -1rem var(--shdow-color);
+    border-radius: 15px;
+    position: relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.camera::before{
+    content: '';
+    position: absolute;
+    width:8rem;
+    height:5rem;
+    left: 3rem;
+    top: -1.5rem;
+    border-radius: 12px;
+    z-index: -1;
+    background-color: var(--power-btn);
+}
+
+
+
+.camera::after{
+    content: '';
+    position: absolute;
+    width:4rem;
+    height: 4rem;
+    right: 3rem;
+    top: 3rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.lens{
+    border: 5rem solid green;
+    border-top: 6rem solid #98fb98;
+    border-right: 6rem solid #90ee90;
+    border-bottom: 6rem solid #2e8b57;
+    border-left: 6rem solid #3cb371;
+    border-radius: 50%;
+
+    box-shadow: 0 0 0 2rem var(--camera-lens),
+    0 0 0 4rem white,
+    0 .5rem 1rem 4rem var(--shdow-color)
+    ;
+}
